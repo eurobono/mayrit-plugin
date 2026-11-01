@@ -1,0 +1,7 @@
+{
+  "name": "mayrit",
+  "owner": { "name": "Mayrit", "url": "https://mayrit.app" },
+  "plugins": [
+    { "name": "mayrit", "source": "./", "description": "Los negocios de Mayrit dentro de la conversación: encuentra negocios, consulta sus catálogos y precios públicos y sigue con el que elijas. Datos, no recomendaciones." }
+  ]
+}

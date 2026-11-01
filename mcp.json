@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "mayrit": { "type": "http", "url": "https://mayrit.app/mcp/publico" }
+  }
+}

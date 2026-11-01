@@ -1,0 +1,13 @@
+{
+  "schema_version": "1",
+  "name": "Mayrit",
+  "short_description": "Tu negocio, con agentes de IA",
+  "description": "Los negocios montados sobre Mayrit dentro de ChatGPT: encuentra negocios, consulta sus catálogos, precios públicos y condiciones, y sigue con el negocio que elijas. Para reservar o pagar, te lleva a la página del negocio. Mayrit no recomienda: da datos y decides tú.",
+  "mcp": "mcp.json",
+  "skills": ["skills/mayrit"],
+  "icon": "iconos/mayrit-512.png",
+  "website": "https://mayrit.app",
+  "support": "https://mayrit.app/soporte",
+  "privacy_policy": "https://mayrit.app/privacidad",
+  "terms_of_service": "https://mayrit.app/condiciones-ia"
+}
