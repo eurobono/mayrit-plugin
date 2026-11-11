@@ -2,8 +2,8 @@
   "name": "mayrit",
   "version": "1.0.0",
   "description": "Los negocios de Mayrit dentro de la conversación: encuentra negocios, consulta sus catálogos y precios públicos y sigue con el negocio que elijas. Datos, no recomendaciones.",
-  "author": { "name": "Mayrit", "url": "https://mayrit.app" },
-  "homepage": "https://mayrit.app",
+  "author": { "name": "Mayrit", "url": "https://mayritlive.ai" },
+  "homepage": "https://mayritlive.ai",
   "license": "Propietaria",
   "keywords": ["negocios", "catalogo", "servicios", "mcp", "espana"]
 }

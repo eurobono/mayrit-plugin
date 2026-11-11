@@ -6,8 +6,8 @@
   "mcp": "mcp.json",
   "skills": ["skills/mayrit"],
   "icon": "iconos/mayrit-512.png",
-  "website": "https://mayrit.app",
-  "support": "https://mayrit.app/soporte",
-  "privacy_policy": "https://mayrit.app/privacidad",
-  "terms_of_service": "https://mayrit.app/condiciones-ia"
+  "website": "https://mayritlive.ai",
+  "support": "https://mayritlive.ai/soporte",
+  "privacy_policy": "https://mayritlive.ai/privacidad",
+  "terms_of_service": "https://mayritlive.ai/condiciones-ia"
 }

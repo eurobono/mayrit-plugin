@@ -4,5 +4,5 @@
   "name_for_human": "Mayrit",
   "description_for_human": "Negocios con agentes de IA: catálogos y precios públicos.",
   "namespace": "mayrit",
-  "runtimes": [{ "type": "RemoteMCPServer", "spec": { "url": "https://mayrit.app/mcp/publico" }, "auth": { "type": "None" } }]
+  "runtimes": [{ "type": "RemoteMCPServer", "spec": { "url": "https://mayritlive.ai/mcp/publico" }, "auth": { "type": "None" } }]
 }

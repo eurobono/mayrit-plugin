@@ -3,11 +3,11 @@
   "manifestVersion": "1.19",
   "version": "1.0.0",
   "id": "8b6e3a52-4f1c-4d8e-9c2a-6d0f1b7e5a31",
-  "developer": { "name": "Mayrit", "websiteUrl": "https://mayrit.app", "privacyUrl": "https://mayrit.app/privacidad", "termsOfUseUrl": "https://mayrit.app/condiciones-ia" },
+  "developer": { "name": "Mayrit", "websiteUrl": "https://mayritlive.ai", "privacyUrl": "https://mayritlive.ai/privacidad", "termsOfUseUrl": "https://mayritlive.ai/condiciones-ia" },
   "name": { "short": "Mayrit", "full": "Mayrit: negocios con agentes de IA" },
   "description": { "short": "Tu negocio, con agentes de IA", "full": "Encuentra los negocios de Mayrit, consulta sus catálogos y precios públicos y sigue con el negocio que elijas. Datos, no recomendaciones." },
   "icons": { "color": "color.png", "outline": "outline.png" },
   "accentColor": "#032C1E",
   "copilotAgents": { "declarativeAgents": [{ "id": "mayrit", "file": "declarativeAgent.json" }] },
-  "validDomains": ["mayrit.app"]
+  "validDomains": ["mayritlive.ai"]
 }

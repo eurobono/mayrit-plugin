@@ -1,5 +1,12 @@
 {
   "mcpServers": {
-    "mayrit": { "type": "http", "url": "https://mayrit.app/mcp/publico" }
+    "mayrit": {
+      "type": "http",
+      "url": "https://mayritlive.ai/mcp/publico"
+    },
+    "mayrit-alta": {
+      "type": "http",
+      "url": "https://mayritlive.ai/mcp"
+    }
   }
 }
