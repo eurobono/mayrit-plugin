@@ -19,7 +19,7 @@ pagar lo haces tú en la página del negocio, nunca dentro del chat.
 
 El plugin trae un segundo conector, **mayrit-alta** (`https://mayritlive.ai/mcp`): con él tu asistente te acompaña en el
 alta de tu negocio en cuatro fases (entender tu negocio, enfrentarlo al mercado, entrenarlo y desplegarlo), paso a paso y
-pidiéndote permiso en cada uno. Entras con tu cuenta de Google y aceptas las condiciones en la página de Mayrit; los
+pidiéndote permiso en cada uno. Entras con tu cuenta de Google o con un código por correo, Telegram o WhatsApp (ese contacto te sirve para recuperar el acceso) y aceptas las condiciones en la página de Mayrit; los
 pagos se hacen siempre en la página de pago, nunca dentro del chat.
 
 ## Qué contiene
@@ -29,7 +29,8 @@ pagos se hacen siempre en la página de pago, nunca dentro del chat.
 | `.claude-plugin/plugin.json` y `.claude-plugin/marketplace.json` | El plugin para Claude |
 | `.mcp.json` | Los conectores de Mayrit: el público (`mayrit`) y el del alta (`mayrit-alta`) |
 | `skills/mayrit/SKILL.md` | Cómo usar Mayrit: encontrar, profundizar y seguir; datos, no recomendaciones |
-| `plugin.json`, `mcp.json` | El paquete para el directorio de ChatGPT |
+| `plugin.json`, `mcp.json`, `assets/` | El paquete para el directorio de ChatGPT (formato Agent Plugins, con la ficha y los casos para el revisor en `extensions`; un solo servidor MCP, el del alta) |
+| `paquetes/` | Los ZIP listos para subir: `mayrit-chatgpt.zip` (OpenAI) y `mayrit-copilot.zip` (Microsoft); se rehacen con `./empaquetar.sh` |
 | `copilot/` | El agente declarativo para Microsoft 365 Copilot |
 | `iconos/` | El icono |
 

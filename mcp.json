@@ -1,10 +1,7 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
   "mcpServers": {
     "mayrit": {
-      "type": "http",
-      "url": "https://mayritlive.ai/mcp/publico"
-    },
-    "mayrit-alta": {
       "type": "http",
       "url": "https://mayritlive.ai/mcp"
     }
