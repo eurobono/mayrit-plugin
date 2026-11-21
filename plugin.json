@@ -1,23 +1,37 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mayrit",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Mayrit turns your AI assistant into your business advisor: plan, validate and launch your business, run by a cabinet of AI agents.",
-  "author": { "name": "Mayrit", "url": "https://mayritlive.ai" },
+  "author": {
+    "name": "Mayrit",
+    "url": "https://mayritlive.ai"
+  },
   "homepage": "https://mayritlive.ai",
   "repository": "https://github.com/eurobono/mayrit-plugin",
   "license": "Proprietary",
-  "keywords": ["business", "small-business", "startup", "ai-agents", "spain"],
+  "keywords": [
+    "business",
+    "small-business",
+    "startup",
+    "ai-agents",
+    "spain"
+  ],
   "mcp": "mcp.json",
-  "skills": ["skills/mayrit"],
+  "skills": [
+    "skills/mayrit"
+  ],
   "extensions": {
     "com.openai.interface": {
       "displayName": "Mayrit",
       "shortDescription": "Your business, with AI agents",
-      "longDescription": "Mayrit turns your AI assistant into your business advisor. Tell it about your business in any way you like (a couple of sentences, your website, a spreadsheet with your plan, or the businesses and Instagram profiles you want to look like) and it guides you through the rest.\n\nMayrit is a method to set up your business fully automated and run by a cabinet of AI agents, so you focus on the business and leave the management to AI. It works in four phases, each with a fixed price for everyone (VAT included; all four for EUR 439):\n1. Understand your business, \"Is it worth it?\" (EUR 49): catalogue, market and real local competitors, business model, fit, canvas and a verdict.\n2. Face the market and the competition, \"This is how your business would work\" (EUR 69): competitors in depth, closed catalogue and prices, channels and AI agents, go-to-market, plan and investment.\n3. Train it, \"Does it hold up?\" (EUR 125): the hypotheses to test, experiments and their instruments, and your agents and prices trained in simulations.\n4. Deploy it, \"Your business, set up and tested\" (EUR 209): content and AI agents, website and shop, Instagram, all texts, what to contract, and the test results.\n\nEvery document is reviewed critically in several rounds and then by a second AI model before you see it. Your assistant tells you what is happening while Mayrit works, explains its conclusions and proposes the next step; you always decide. You pay each phase on Mayrit's website (Stripe); your assistant never sees card details. A live page, \"Your sign-up\", shows your phase, progress, documents and payments at any time.\n\nSign in with Google, or with a code sent by email, Telegram or WhatsApp. Available in Spain.",
+      "longDescription": "Mayrit turns your AI assistant into your business advisor. Tell it about your business in any way you like (a couple of sentences, your website, a spreadsheet with your plan, or the businesses and Instagram profiles you want to look like) and it guides you through the rest.\n\nMayrit is a method to set up a business fully automated and run by a cabinet of AI agents, in four phases:\n1. Understand your business, \"Is it worth it?\": catalogue, market and real local competitors, business model, fit, canvas and a verdict.\n2. Face the market and the competition, \"This is how your business would work\": competitors in depth, catalogue and prices, channels and AI agents, go-to-market, plan and investment.\n3. Train it, \"Does it hold up?\": the hypotheses to test, experiments and their instruments, and your agents trained in simulations.\n4. Deploy it, \"Your business, set up and tested\": content and AI agents, website and shop, Instagram, all texts, what to contract, and the test results.\n\nIn ChatGPT you can start your sign-up, answer Mayrit's questions, follow the progress live and read and search every document Mayrit produces for you. Each phase is activated from your own account on mayritlive.ai, not from ChatGPT. Every document is reviewed critically in several rounds and then by a second AI model before you see it. A live page, \"Your sign-up\", shows your phase, progress and documents at any time.\n\nSign in with Google, or with a code sent by email, Telegram or WhatsApp. Available in Spain.",
       "developerName": "ANNA Cuidado Tecnico del Hogar, S.L. (Mayrit)",
       "category": "Business",
-      "capabilities": ["Interactive", "Write"],
+      "capabilities": [
+        "Interactive",
+        "Write"
+      ],
       "websiteURL": "https://mayritlive.ai",
       "supportURL": "https://mayritlive.ai/soporte",
       "privacyPolicyURL": "https://mayritlive.ai/privacidad",
@@ -35,25 +49,64 @@
     "com.openai.review": {
       "test_cases": {
         "positive": [
-          { "description": "Start a sign-up", "prompt": "I want to open a small wine shop in Madrid. Help me check if it's worth it.", "tools_triggered": "guia, empezar_alta", "expected_result": "Mayrit creates the sign-up and returns the business id, the link to the live page \"Your sign-up\" and the questions still missing; the assistant asks them." },
-          { "description": "Tell Mayrit about the business", "prompt": "Here is my website: https://example.com. Use it to answer what you can.", "tools_triggered": "preguntas, responder", "expected_result": "The assistant answers the questions it can from the website and confirms them in one block; the result lists what was saved and what is still missing." },
-          { "description": "Pay a phase (simulated for reviewers)", "prompt": "Let's start phase 1. How do I pay?", "tools_triggered": "pagar_fase", "expected_result": "A payment link on Mayrit's website (/pagar/...) for EUR 49, VAT included. With the reviewer account it goes to the payment simulator (card 4242 4242 4242 4242); nothing is charged." },
-          { "description": "Follow the progress", "prompt": "How is it going?", "tools_triggered": "esperar_avance", "expected_result": "What is new, documents done out of total (\"n of m\") and the minutes left; the live page shows the same." },
-          { "description": "Read and search the documents", "prompt": "Show me the competitors you found and their prices.", "tools_triggered": "documentos", "expected_result": "The relevant passages of the competition document and, on request, the whole document; the assistant explains the conclusions and proposes the next step without recommending." }
+          {
+            "description": "Start a sign-up",
+            "prompt": "I want to open a small wine shop in Madrid. Help me check if it's worth it.",
+            "tools_triggered": "guia, empezar_alta",
+            "expected_result": "Mayrit creates the sign-up and returns the business id, the link to the live page \"Your sign-up\" and the questions still missing; the assistant asks them."
+          },
+          {
+            "description": "Tell Mayrit about the business",
+            "prompt": "Here is my website: https://example.com. Use it to answer what you can.",
+            "tools_triggered": "preguntas, responder",
+            "expected_result": "The assistant answers the questions it can from the website and confirms them in one block; the result lists what was saved and what is still missing."
+          },
+          {
+            "description": "Ask to start phase 1 (activated on the website)",
+            "prompt": "Let's start phase 1.",
+            "tools_triggered": "guia",
+            "expected_result": "Mayrit returns the sign-up status with activar_fase: the phase is activated by the user on their sign-up page at mayritlive.ai (\"Your sign-up\"), not from ChatGPT. No payment link and no price are returned; the assistant says where it is activated."
+          },
+          {
+            "description": "Follow the progress",
+            "prompt": "How is it going?",
+            "tools_triggered": "esperar_avance",
+            "expected_result": "What is new, documents done out of total (\"n of m\") and the minutes left; the live page shows the same. (With the reviewer account, phase 1 is activated on \"Your sign-up\" with the test card, see the reviewer notes.)"
+          },
+          {
+            "description": "Read and search the documents",
+            "prompt": "Show me the competitors you found and their prices.",
+            "tools_triggered": "documentos",
+            "expected_result": "The relevant passages of the competition document and, on request, the whole document; the assistant explains the conclusions and proposes the next step without recommending."
+          }
         ],
         "negative": [
-          { "description": "Unrelated travel request", "prompt": "Book me a flight to Lisbon.", "expected_result": "The assistant does not use Mayrit: it is not about setting up or running a business." },
-          { "description": "Market data", "prompt": "Give me today's stock price of Apple.", "expected_result": "The assistant does not use Mayrit." },
-          { "description": "Creative writing", "prompt": "Write me a poem about the sea.", "expected_result": "The assistant does not use Mayrit." }
+          {
+            "description": "Unrelated travel request",
+            "prompt": "Book me a flight to Lisbon.",
+            "expected_result": "The assistant does not use Mayrit: it is not about setting up or running a business."
+          },
+          {
+            "description": "Market data",
+            "prompt": "Give me today's stock price of Apple.",
+            "expected_result": "The assistant does not use Mayrit."
+          },
+          {
+            "description": "Creative writing",
+            "prompt": "Write me a poem about the sea.",
+            "expected_result": "The assistant does not use Mayrit."
+          }
         ]
       },
       "demo_recording_url": "",
       "commerce": false,
-      "commerce_description": "Mayrit does not take payments inside the conversation. Each phase is paid by the user on Mayrit's own website (Stripe Checkout); the assistant only gives the link and never sees card details."
+      "commerce_description": "Mayrit sells nothing inside ChatGPT and returns no payment links or prices. The ChatGPT endpoint (https://mayritlive.ai/mcp/chatgpt) has no payment tool; when a phase is not active yet, the tool result only says that it is activated from the user's own account on mayritlive.ai (\"Your sign-up\")."
     },
     "com.openai.publication": {
-      "countries": ["ES"],
-      "release_notes": "First public release: sign-up in four phases, payment links on Mayrit's website, live progress and document search. Sign in with Google or with a code by email, Telegram or WhatsApp."
+      "countries": [
+        "ES"
+      ],
+      "release_notes": "First public release: start a business sign-up, answer Mayrit's questions, follow the progress live and read and search the documents. Phases are activated from the user's account on mayritlive.ai. Sign in with Google or with a code by email, Telegram or WhatsApp."
     }
   }
 }

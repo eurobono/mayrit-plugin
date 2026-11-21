@@ -12,7 +12,13 @@ pagar lo haces tú en la página del negocio, nunca dentro del chat.
 
 - **Claude** (claude.ai, escritorio y Claude Code): en el directorio de Claude, o en Claude Code con
   `/plugin marketplace add eurobono/mayrit-plugin` y después `/plugin install mayrit@mayrit`.
-- **Cualquier asistente con conectores MCP** (ChatGPT, Gemini, Grok, Copilot…): añade un conector personalizado con la
+- **ChatGPT**: en su directorio de apps, cuando esté publicada (el paquete es `paquetes/mayrit-chatgpt.zip`; su servidor es
+  `https://mayritlive.ai/mcp/chatgpt`, el alta sin pagos dentro de ChatGPT: cada fase se activa en tu cuenta de mayritlive.ai).
+- **Gemini CLI**: `gemini extensions install https://github.com/eurobono/mayrit-plugin` (este repositorio es también una
+  extensión de Gemini CLI: `gemini-extension.json` y `GEMINI.md`).
+- **App de Gemini** (gemini.google.com › Ajustes › Connected Apps › «Add a custom app», hoy solo en EE. UU., en inglés y con
+  cuenta personal): la dirección `https://mayritlive.ai/mcp/directorio`.
+- **Cualquier asistente con conectores MCP** (Grok, Copilot…): añade un conector personalizado con la
   dirección `https://mayritlive.ai/mcp/publico`.
 
 ### Montar tu propio negocio en Mayrit
@@ -29,7 +35,8 @@ pagos se hacen siempre en la página de pago, nunca dentro del chat.
 | `.claude-plugin/plugin.json` y `.claude-plugin/marketplace.json` | El plugin para Claude |
 | `.mcp.json` | Los conectores de Mayrit: el público (`mayrit`) y el del alta (`mayrit-alta`) |
 | `skills/mayrit/SKILL.md` | Cómo usar Mayrit: encontrar, profundizar y seguir; datos, no recomendaciones |
-| `plugin.json`, `mcp.json`, `assets/` | El paquete para el directorio de ChatGPT (formato Agent Plugins, con la ficha y los casos para el revisor en `extensions`; un solo servidor MCP, el del alta) |
+| `plugin.json`, `mcp.json`, `chatgpt/skills/`, `assets/` | El paquete para el directorio de ChatGPT (formato Agent Plugins, con la ficha y los casos para el revisor en `extensions`; un solo servidor MCP, `https://mayritlive.ai/mcp/chatgpt`, el alta sin pagos ni precios, norma 5.1 de OpenAI; y su propia skill) |
+| `gemini-extension.json`, `GEMINI.md` | La extensión de Gemini CLI (los dos conectores; la skill de `skills/`) |
 | `paquetes/` | Los ZIP listos para subir: `mayrit-chatgpt.zip` (OpenAI) y `mayrit-copilot.zip` (Microsoft); se rehacen con `./empaquetar.sh` |
 | `copilot/` | El agente declarativo para Microsoft 365 Copilot |
 | `iconos/` | El icono |

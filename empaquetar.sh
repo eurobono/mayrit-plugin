@@ -4,6 +4,9 @@
 set -e
 cd "$(dirname "$0")"
 rm -f paquetes/mayrit-chatgpt.zip paquetes/mayrit-copilot.zip
-zip -q -X -r paquetes/mayrit-chatgpt.zip plugin.json mcp.json skills assets
+# 21/11/2026 (decisión chatgpt-y-gemini): el de ChatGPT lleva su propia skill (chatgpt/skills: sin precios ni enlaces de pago,
+# norma 5.1 de OpenAI) y su servidor es https://mayritlive.ai/mcp/chatgpt (mcp.json).
+T=$(mktemp -d); cp plugin.json mcp.json "$T"/; cp -r chatgpt/skills assets "$T"/
+(cd "$T" && zip -q -X -r - plugin.json mcp.json skills assets) > paquetes/mayrit-chatgpt.zip; rm -rf "$T"
 (cd copilot && zip -q -X ../paquetes/mayrit-copilot.zip manifest.json declarativeAgent.json ai-plugin.json color.png outline.png)
 unzip -l paquetes/mayrit-chatgpt.zip; unzip -l paquetes/mayrit-copilot.zip
