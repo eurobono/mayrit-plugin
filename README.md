@@ -17,7 +17,7 @@ pagar lo haces tú en la página del negocio, nunca dentro del chat.
 
 ### Montar tu propio negocio en Mayrit
 
-El plugin trae un segundo conector, **mayrit-alta** (`https://mayritlive.ai/mcp`): con él tu asistente te acompaña en el
+El plugin trae un segundo conector, **mayrit-alta** (`https://mayritlive.ai/mcp/directorio`, la puerta de los directorios: solo el recorrido del alta; la puerta completa, `https://mayritlive.ai/mcp`, sigue para quien lleva su negocio desde su asistente): con él tu asistente te acompaña en el
 alta de tu negocio en cuatro fases (entender tu negocio, enfrentarlo al mercado, entrenarlo y desplegarlo), paso a paso y
 pidiéndote permiso en cada uno. Entras con tu cuenta de Google o con un código por correo, Telegram o WhatsApp (ese contacto te sirve para recuperar el acceso) y aceptas las condiciones en la página de Mayrit; los
 pagos se hacen siempre en la página de pago, nunca dentro del chat.

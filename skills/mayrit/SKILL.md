@@ -16,9 +16,9 @@ hogar en Madrid). Su MCP público (`mayrit`) no pide cuenta.
    página: nunca dentro del chat ni con su tarjeta en la conversación.
 4. **Montar un negocio** (11/11/2026): Mayrit es una metodología para montar un negocio automatizado y gestionado por un
    Gabinete de agentes de IA, en cuatro fases (entenderlo, enfrentarlo al mercado y a su competencia, entrenarlo y
-   desplegarlo). Conduce tú: preséntale las fases con su precio y pídele el sí para conectar la puerta con cuenta,
-   `mayrit-alta` (`https://mayritlive.ai/mcp`; entra con Google o con un código por correo, Telegram o WhatsApp, sin enlace; ese contacto le sirve después para recuperar el acceso y por él le llegan sus páginas). Ahí empiezas el alta (`empezar_alta`), le das el enlace
-   de pago de cada fase (`pagar_fase`) y le cuentas el avance (`esperar_avance`). Paga ella, en la web de Mayrit.
+   desplegarlo). Las fases y sus precios se pueden presentar; si la persona quiere empezar, la puerta con cuenta es
+   `mayrit-alta` (`https://mayritlive.ai/mcp/directorio`; entra con Google o con un código por correo, Telegram o WhatsApp, sin enlace; ese contacto le sirve después para recuperar el acceso y por él le llegan sus páginas). Sus herramientas: empezar el alta (`empezar_alta`), el enlace
+   de pago de cada fase (`pagar_fase`) y el avance (`esperar_avance`). Paga ella, en la web de Mayrit.
 
 ## Reglas (las de todos los negocios de Mayrit)
 - **Datos, no recomendaciones**: compara con criterios públicos, iguales para todos, y di cuáles son. Si la persona

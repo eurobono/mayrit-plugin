@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mayrit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Mayrit turns your AI assistant into your business advisor: plan, validate and launch your business, run by a cabinet of AI agents.",
   "author": { "name": "Mayrit", "url": "https://mayritlive.ai" },
   "homepage": "https://mayritlive.ai",

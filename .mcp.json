@@ -6,7 +6,7 @@
     },
     "mayrit-alta": {
       "type": "http",
-      "url": "https://mayritlive.ai/mcp"
+      "url": "https://mayritlive.ai/mcp/directorio"
     }
   }
 }
